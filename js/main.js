@@ -29,6 +29,6 @@ document.getElementById('calcBtn').addEventListener('click', () => {
     document.getElementById("amortization").innerHTML = html;
 
     // create instance from user
-    var userObj = new User('Demo', 'Task');
+    var  userObj = new User('Demo', 'Task');
     console.log(userObj.getFullName());
  });
