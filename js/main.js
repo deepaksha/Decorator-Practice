@@ -1,5 +1,8 @@
 import Mortgage from './mortgage2';
 import User from './user';
+import PopUpInfo from './PopUpInfo';
+import LabelDivCmp from './LabelDivCmp';
+
 document.getElementById('calcBtn').addEventListener('click', () => {
     let principal = document.getElementById("principal").value;
     let years = document.getElementById("years").value;
