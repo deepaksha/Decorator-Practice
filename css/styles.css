@@ -31,23 +31,6 @@ header > h1 {
     color: #FFFFFF;
 }
 
-h2 {
-    font-size: 22px;
-    margin: 20px 0 0 0;
-}
-
-h2 > .currency {
-    color: #0288D1;
-}
-
-h3 {
-    margin: 10px 0 28px 0;
-}
-
-h3 > span {
-    color: #0288D1;
-}
-
 .principal {
     color: #0288D1;
 }
