@@ -10,24 +10,36 @@
     <h1>Mortgage Calculator</h1>
 </header>
 <div class="content">
-    <div class="form">
-        <div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="marb20">
+    <tr>
+	<div class="form">
+        <tr>
+		<td align="right">
             <label>Principal:</label>
-            <input type="text" id="principal" value="200000"/>
-        </div>
-        <div>
+            <input type="text" id="principal" value="200000" min="1000" max="9999999999"/>
+        </td>
+		</tr>
+        
+		<tr>
+		<td align="right" >
             <label>Years:</label>
-            <input type="text" id="years" value="30"/>
-        </div>
-        <div>
+            <input type="text" id="years" value="30" min="1" max="50"/>
+        </td>
+		</tr>
+		
+        <tr>
+		<td>
             <label htmlFor="rate">Rate:</label>
-            <input type="text" id="rate" value="5.0"/>
-        </div>
-        <div>
-            <label htmlFor="calcBtn"></label>
-            <button id="calcBtn">Calculate</button>
-        </div>
+            <input type="text" id="rate" value="5.0" min="1" max="50"/>
+        </td>
+		</tr>
+		
+		<tr class="buttons">
+		<td><label htmlFor="calcBtn"></label><button id="calcBtn">Calculate</button></td>
+		</tr>
     </div>
+	</table>
+	
     <h2>Monthly Payment: <span id="monthlyPayment" class="currency"></span></h2>
     <h3>Monthly Rate: <span id="monthlyRate"></span></h3>
     <table id="amortization"></table> 
